@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Demo - Record Photo From Webcam Using Javascript</title>
+    <title>Virtual Interview | Virtual Video Interview, Video Interview | Tech Interviews</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
@@ -49,53 +49,118 @@
 </head>
 
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal"> <img class="mb-2"
-                src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">Company name
-        </h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-            Interview For Frontend Developer | Approx 30 min
-        </nav>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8">
-                <div class="pricing-header my-4 px-4 py-4 pt-md-5 pb-md-4 mx-auto text-center">
-                    <h1 class="my-4 py-4 mx-auto text-center">Please tell me about yourself
-                    </h1>
-                </div>
+    <div class="row" id="content-loading-main">
+        <div class="col-5"></div>
+        <div class="col-4">
+            <div class="spinner-border text-primary" style="width: 13rem; height: 13rem; margin-top: 10rem"
+                role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-            <div class="col-4">
-                <div class="card-deck mb-3 text-center">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <video id="video" width="320" height="240" autoplay></video>
-                            <button id="start-record" class="btn btn-lg btn-block btn-primary">Start Recording</button>
-                            <button id="stop-record" class="btn btn-lg btn-block btn-primary">Stop Recording</button>
-                            <a id="download-video" download="test.webm">Download Video</a>
-                            <button type="button" id="start-camera" class="btn btn-lg btn-block btn-primary">Start
-                                Camera</button>
-                        </div>
+        </div>
+    </div>
+    <div id="content-main">
+        <div
+            class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <h5 class="my-0 mr-md-auto font-weight-normal"> <img class="mb-2"
+                    src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">Company name
+            </h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+
+                <span>Interview For <span id="job-position"></span> at <span id="company-name"></span> | Approx <span
+                        id="interview-time"></span>
+                    min</span>
+                <a id="end-interview" class="btn btn-sm btn-danger">End Interview</a>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <div class="row" id="content-loading-sub">
+                <div class="col-5"></div>
+                <div class="col-4">
+                    <div class="spinner-border text-primary" style="width: 13rem; height: 13rem; margin-top: 10rem"
+                        role="status">
+                        <span class="sr-only">Loading...</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <button type="button" id="next-question" class="btn btn-lg btn-block btn-primary">Next
-                    Question</button>
+            <div id="content-sub" class="row">
+                <div class="col-lg-8 col-md-6">
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 shadow-lg ml-3 p-lg-4 mb-lg-4 bg-white font-weight-bolder"
+                            style="font-size: 2rem;" id="time-container"> <span id="remaining-time"></span> Seconds
+                        </div>
+                        <div class="col-lg-7 col-md-6 col-sm-12 shadow-lg ml-3 p-lg-4 mb-lg-4 bg-white"
+                            style="font-size: 2rem;" id="question-remaining"> Question No <span
+                                id="current-question"></span> Of
+                            <span id="total-question"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 pricing-header my-4 pt-md-5 pb-md-4 mx-auto text-center">
+                        <h1 class="my-lg-4 py=lg-4 mx-auto text-center" id="interview_question"></h1>
+                    </div>
+                    <!-- <video width="320" height="240" controls>
+                    <source src="https://orgilavarresourcegra1c6.blob.core.windows.net/interview/1234/1-%23%23%23c96dac00-15c2-11ed-b14a-39a5fb61cbbd.webm?sp=r&st=2022-08-07T14:37:52Z&se=2022-08-07T22:37:52Z&sv=2021-06-08&sr=b&sig=8aWPXXAkBUIwnVqyhZKL4k%2FD5xYZdmUVa0N5aU9Loxw%3D" type="video/webm">
+                    <source src="https://orgilavarresourcegra1c6.blob.core.windows.net/interview/1234/1-%23%23%23c96dac00-15c2-11ed-b14a-39a5fb61cbbd.webm?sp=r&st=2022-08-07T14:37:52Z&se=2022-08-07T22:37:52Z&sv=2021-06-08&sr=b&sig=8aWPXXAkBUIwnVqyhZKL4k%2FD5xYZdmUVa0N5aU9Loxw%3D" type="video/webm">
+                    Your browser does not support the video tag.
+                    https://orgilavarresourcegra1c6.blob.core.windows.net/interview/62e87cb3af529e38e4fddc87%2F1-%23%23%23f1740c80-193c-11ed-8c87-e33966ccf119.webm?st=2022-08-11T06%3A10%3A05Z&se=2023-02-07T07%3A15%3A05Z&sp=r&sv=2018-03-28&sr=b&sig=hMgzqApFlu9dLlFl7SndQxpTg9k63GC0JQGKCBa3jc0%3D
+
+                    https://orgilavarresourcegra1c6.blob.core.windows.net/interview/62e87cb3af529e38e4fddc87/1-%23%23%23bcbed020-193b-11ed-9979-79ff0721cde9.webm?sp=r&st=2022-08-11T06:09:39Z&se=2022-08-11T14:09:39Z&spr=https&sv=2021-06-08&sr=b&sig=4lb3UJBEod6ONXmsdYGCiJXr2%2FNeHqdYgOGuHh1DKGc%3D
+                </video> -->
+                <!-- <video width="320" height="240" controls>
+                    <source src="https://orgilavarresourcegra1c6.blob.core.windows.net/interview/62e87cb3af529e38e4fddc87%2F1-%23%23%23d22430c0-193d-11ed-8c87-e33966ccf119.webm?st=2022-08-11T06%3A16%3A22Z&se=2023-02-07T07%3A21%3A22Z&sp=r&sv=2018-03-28&sr=b&sig=CF0%2B%2FbkZ1EtOFI%2FAz4Mh0P%2FHcSEcZOxf5rCqN43%2B32U%3D" type="video/webm">
+                    <source src="https://orgilavarresourcegra1c6.blob.core.windows.net/interview/62e87cb3af529e38e4fddc87%2F1-%23%23%23d22430c0-193d-11ed-8c87-e33966ccf119.webm?st=2022-08-11T06%3A16%3A22Z&se=2023-02-07T07%3A21%3A22Z&sp=r&sv=2018-03-28&sr=b&sig=CF0%2B%2FbkZ1EtOFI%2FAz4Mh0P%2FHcSEcZOxf5rCqN43%2B32U%3D" type="video/webm">
+                    Your browser does not support the video tag.
+                    
+                </video> -->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center shadow-lg p-2">
+                        <video id="video" height="300" autoplay></video>
+                        <button class="btn btn-outline-success btn-lg btn-block" type="button" disabled>
+                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                            Recording In Progress...
+                        </button>
+                        <button id="start-record" class="btn btn-lg btn-block btn-success">Start
+                            Recording</button>
+                        <button id="stop-record" class="btn btn-lg btn-block btn-primary">Stop
+                            Recording</button>
+                        <a id="download-video" download="test.webm">Download Video</a>
+                        <button type="button" id="start-camera" class="btn btn-lg btn-block btn-primary">Start
+                            Camera</button>
+                    </div>
+                </div>
             </div>
-        </div>
-
-
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
-                <div class="col-12 col-md">Supported by Ilavar tech</div>
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button type="button" id="next-question" class="btn btn-lg btn-block btn-primary">Next
+                        Question</button>
+                    <button id="end-interview-second" type="button" class="btn btn-lg btn-block btn-primary">End
+                        Interview</button>
+                </div>
             </div>
-        </footer>
+
+            <footer class="pt-3 my-md-3 pt-md-3 border-top">
+                <div class="d-flex justify-content-center">
+                    Supported by
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                        class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z" />
+                    </svg>
+                    <a href="https://ilavar.com/"> Ilavar tech</a>
+                </div>
+            </footer>
+        </div>
     </div>
     <script>
+        let pathParamsArray = window.location.pathname.split('/');
+        let interviewId = pathParamsArray[3];
+        let questionNo = parseInt(pathParamsArray[4]);
+        let interviewDetails = {
+            data: ""
+        };
+        let currentInterviewQuestion = 0;
 
         let camera_button = document.querySelector("#start-camera");
         let video = document.querySelector("#video");
@@ -103,11 +168,18 @@
         let stop_button = document.querySelector("#stop-record");
         let download_link = document.querySelector("#download-video");
         let next_question = document.querySelector("#next-question");
+        let end_interview = document.querySelector("#end-interview");
+        let end_interview_second = document.querySelector("#end-interview-second");
+        let content_loading = document.querySelector("#content-loading");
+        let content_main = document.querySelector("#content-main");
+        let clicked_end_button = false;
 
         let camera_stream = null;
         let media_recorder = null;
         let blobs_recorded = [];
+        // initalize camera for every question
         async function initCamera() {
+            let timeLeft = 32;
             console.log("init camera");
             try {
                 const constraintsVideo = {
@@ -138,45 +210,116 @@
                 blobs_recorded.push(e.data);
             });
 
-            media_recorder.addEventListener('stop', function () {
+            media_recorder.addEventListener('stop', async function () {
                 console.log("trigered stop");
+                clearTimeout(timerFunction);
                 // let video_local = URL.createObjectURL(new Blob(blobs_recorded, { type: 'video/webm' }));
                 // download_link.href = video_local;
-                makeApiCall();
-
+                currentInterviewQuestion = currentInterviewQuestion + 1;
+                console.log(currentInterviewQuestion);
+                if (currentInterviewQuestion < interviewDetails.questions.length - 1) {
+                    $('#interview_question').text(interviewDetails.questions[currentInterviewQuestion].question);
+                    await clickedNextQuestion(currentInterviewQuestion);
+                    await initCamera();
+                }
+                if (currentInterviewQuestion == interviewDetails.questions.length - 1) {
+                    $('#interview_question').text(interviewDetails.questions[currentInterviewQuestion].question);
+                    await clickedNextQuestion(currentInterviewQuestion);
+                    await initCamera();
+                    $('#next-question').hide();
+                    $('#end-interview-second').show();
+                }
+                if (currentInterviewQuestion > interviewDetails.questions.length - 1 || clicked_end_button) {
+                    window.location.replace('/api/end-interview/' + interviewId);
+                }
+                $("#current-question").text(currentInterviewQuestion + 1);
+                $("#total-question").text(interviewDetails.questions.length);
                 stop_button.style.display = 'none';
                 download_link.style.display = 'none';
             });
 
             media_recorder.start(1000);
+
+            var timerFunction = setInterval(function () {
+                timeLeft = timeLeft - 1;
+                document.getElementById('time-container').classList.remove('text-success');
+                document.getElementById('time-container').classList.remove('text-warning');
+                document.getElementById('time-container').classList.remove('text-danger');
+                if (timeLeft > 30) {
+                    document.getElementById('time-container').classList.add('text-success');
+                } else if (timeLeft > 15) {
+                    document.getElementById('time-container').classList.remove('text-success');
+                    document.getElementById('time-container').classList.add('text-warning');
+                } else {
+                    document.getElementById('time-container').classList.remove('text-warning');
+                    document.getElementById('time-container').classList.add('text-danger');
+                }
+
+                if (timeLeft < -1) {
+                    document.getElementById('time-container').classList.remove('text-danger');
+                    clearTimeout(timerFunction)
+                    next_question.click();
+                }
+                document.getElementById('remaining-time').innerHTML = timeLeft;
+            }, 1000);
         };
 
-        function makeApiCall() {
+        function updateHtmlData() {
+            $("#job-position").text(interviewDetails.jobRole);
+            $("#company-name").text(interviewDetails.companyName);
+            $("#interview-time").text(interviewDetails.interviewTime);
+            $('#interview_question').text(interviewDetails.questions[currentInterviewQuestion].question);
+            $("#current-question").text(currentInterviewQuestion + 1);
+            $("#total-question").text(interviewDetails.questions.length);
+        }
+
+        async function getInterviewQuestions() {
+            await $.ajax({
+                url: `/api/interview-details/${interviewId}/questions`,
+                type: "POST",
+                processData: false,
+                contentType: "application/json"
+            }).then(function (data) {
+                interviewDetails = JSON.parse(data);
+            }, function (e) {
+                console.log(e);
+            });
+        }
+
+        async function clickedNextQuestion(currentQuestion) {
+            $('#content-loading-sub').show();
+            $('#content-sub').hide();
+            let questionNumber = currentQuestion -1;
+            let questionId = interviewDetails.questions[questionNumber].questionId;
             let video_local = new Blob(blobs_recorded, { type: 'video/webm' });
-            var formData = new FormData();
+            let formData = new FormData();
             formData.append('file', video_local);
 
             $.ajax({
-                url: "/api/v1/up/upload",
+                url: `/api/upload-interview/${interviewId}/${questionId}`,
                 type: "POST",
                 data: formData,
                 enctype: 'multipart/form-data',
                 processData: false,
                 contentType: false,
                 success: function (data) {
-                    console.lo(data);
+                    $('#content-loading-sub').hide();
+                    $('#content-sub').show();
                 },
                 error: function (e) {
                     console.log(e);
+                    $('#content-loading-sub').hide();
+                    $('#content-sub').show();
                 }
             });
         }
 
         next_question.addEventListener('click', async function () {
             await media_recorder.stop();
-            setTimeout(() => { console.log("stop completely") }, 2000)
-            await download_link.click();
-            await initCamera();
+            setTimeout(() => { console.log("stop completely") }, 2000);
+            //window.location.replace('/api/interview-inprogress/'+interviewId+'/'+questionNo+1);
+            // await download_link.click();
+            // await initCamera();
         })
 
         camera_button.addEventListener('click', async function () {
@@ -192,7 +335,7 @@
             }
             catch (error) {
                 // need to make an error api call
-                alert(error.message);
+                //alert(error.message);
                 return;
             }
 
@@ -204,35 +347,59 @@
 
         });
 
-        start_button.addEventListener('click', function () {
-            media_recorder = new MediaRecorder(camera_stream, { mimeType: 'video/webm' });
+        // start_button.addEventListener('click', function () {
+        //     media_recorder = new MediaRecorder(camera_stream, { mimeType: 'video/webm' });
 
-            media_recorder.addEventListener('dataavailable', function (e) {
-                blobs_recorded.push(e.data);
-            });
+        //     media_recorder.addEventListener('dataavailable', function (e) {
+        //         blobs_recorded.push(e.data);
+        //     });
 
-            media_recorder.addEventListener('stop', function () {
-                let video_local = URL.createObjectURL(new Blob(blobs_recorded, { type: 'video/webm' }));
-                //download_link.href = video_local;
+        //     media_recorder.addEventListener('stop', function () {
+        //         let video_local = URL.createObjectURL(new Blob(blobs_recorded, { type: 'video/webm' }));
+        //         //download_link.href = video_local;
 
-                stop_button.style.display = 'none';
-                // download_link.style.display = 'block';
-            });
+        //         stop_button.style.display = 'none';
+        //         // download_link.style.display = 'block';
+        //     });
 
-            media_recorder.start(1000);
+        //     media_recorder.start(1000);
 
-            start_button.style.display = 'none';
-            stop_button.style.display = 'block';
-        });
+        //     start_button.style.display = 'none';
+        //     stop_button.style.display = 'none';
+        // });
 
-        stop_button.addEventListener('click', function () {
+        // stop_button.addEventListener('click', function () {
+        //     media_recorder.stop();
+        // });
+
+        end_interview.addEventListener('click', function () {
+            clicked_end_button = true;
             media_recorder.stop();
         });
 
-        window.addEventListener('load', (event) => {
-            console.log('page is fully loaded');
-            initCamera();
+        end_interview_second.addEventListener('click', function () {
+            clicked_end_button = true;
+            media_recorder.stop();
         });
+
+        window.addEventListener('load', async (event) => {
+            $('#content-loading-sub').hide();
+            $('#content-main').hide();
+            await initCamera();
+            await getInterviewQuestions();
+            await updateHtmlData();
+            $('#content-loading-main').hide();
+            $('#content-main').show();
+            end_interview_second.display
+            $('#end-interview-second').hide();
+
+            // setTimeout(async function () {
+            //     await updateHtmlData();
+            // }, 1000);
+        });
+
+        camera_button.click();
+
 
     </script>
 </body>
