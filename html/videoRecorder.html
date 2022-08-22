@@ -106,7 +106,7 @@
 
                     https://orgilavarresourcegra1c6.blob.core.windows.net/interview/62e87cb3af529e38e4fddc87/1-%23%23%23bcbed020-193b-11ed-9979-79ff0721cde9.webm?sp=r&st=2022-08-11T06:09:39Z&se=2022-08-11T14:09:39Z&spr=https&sv=2021-06-08&sr=b&sig=4lb3UJBEod6ONXmsdYGCiJXr2%2FNeHqdYgOGuHh1DKGc%3D
                 </video> -->
-                <!-- <video width="320" height="240" controls>
+                    <!-- <video width="320" height="240" controls>
                     <source src="https://orgilavarresourcegra1c6.blob.core.windows.net/interview/62e87cb3af529e38e4fddc87%2F1-%23%23%23d22430c0-193d-11ed-8c87-e33966ccf119.webm?st=2022-08-11T06%3A16%3A22Z&se=2023-02-07T07%3A21%3A22Z&sp=r&sv=2018-03-28&sr=b&sig=CF0%2B%2FbkZ1EtOFI%2FAz4Mh0P%2FHcSEcZOxf5rCqN43%2B32U%3D" type="video/webm">
                     <source src="https://orgilavarresourcegra1c6.blob.core.windows.net/interview/62e87cb3af529e38e4fddc87%2F1-%23%23%23d22430c0-193d-11ed-8c87-e33966ccf119.webm?st=2022-08-11T06%3A16%3A22Z&se=2023-02-07T07%3A21%3A22Z&sp=r&sv=2018-03-28&sr=b&sig=CF0%2B%2FbkZ1EtOFI%2FAz4Mh0P%2FHcSEcZOxf5rCqN43%2B32U%3D" type="video/webm">
                     Your browser does not support the video tag.
@@ -129,14 +129,16 @@
                             Camera</button>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <button type="button" id="next-question" class="btn btn-lg btn-block btn-primary">Next
-                        Question</button>
-                    <button id="end-interview-second" type="button" class="btn btn-lg btn-block btn-primary">End
-                        Interview</button>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <button type="button" id="next-question" class="btn btn-lg btn-block btn-primary">Next
+                                Question</button>
+                            <button id="end-interview-second" type="button" class="btn btn-lg btn-block btn-primary">End
+                                Interview</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -179,7 +181,7 @@
         let blobs_recorded = [];
         // initalize camera for every question
         async function initCamera() {
-            let timeLeft = 32;
+            let timeLeft = 180;
             console.log("init camera");
             try {
                 const constraintsVideo = {
@@ -218,24 +220,34 @@
                 currentInterviewQuestion = currentInterviewQuestion + 1;
                 console.log(currentInterviewQuestion);
                 if (currentInterviewQuestion < interviewDetails.questions.length - 1) {
+                    console.log(currentInterviewQuestion + "" + interviewDetails.questions.length);
                     $('#interview_question').text(interviewDetails.questions[currentInterviewQuestion].question);
                     await clickedNextQuestion(currentInterviewQuestion);
                     await initCamera();
                 }
                 if (currentInterviewQuestion == interviewDetails.questions.length - 1) {
+                    console.log(currentInterviewQuestion + "" + interviewDetails.questions.length);
                     $('#interview_question').text(interviewDetails.questions[currentInterviewQuestion].question);
                     await clickedNextQuestion(currentInterviewQuestion);
                     await initCamera();
                     $('#next-question').hide();
                     $('#end-interview-second').show();
                 }
-                if (currentInterviewQuestion > interviewDetails.questions.length - 1 || clicked_end_button) {
+                if (currentInterviewQuestion == interviewDetails.questions.length || clicked_end_button) {
+                    console.log(currentInterviewQuestion + "" + interviewDetails.questions.length);
+                    await clickedNextQuestion(currentInterviewQuestion);
+                    setTimeout(function () {
+                        window.location.replace('/api/end-interview/' + interviewId);
+                    }, 1000);
+                }
+                if (currentInterviewQuestion > interviewDetails.questions.length || clicked_end_button) {
                     window.location.replace('/api/end-interview/' + interviewId);
                 }
                 $("#current-question").text(currentInterviewQuestion + 1);
                 $("#total-question").text(interviewDetails.questions.length);
                 stop_button.style.display = 'none';
                 download_link.style.display = 'none';
+                blobs_recorded = [];
             });
 
             media_recorder.start(1000);
@@ -289,7 +301,7 @@
         async function clickedNextQuestion(currentQuestion) {
             $('#content-loading-sub').show();
             $('#content-sub').hide();
-            let questionNumber = currentQuestion -1;
+            let questionNumber = currentQuestion - 1;
             let questionId = interviewDetails.questions[questionNumber].questionId;
             let video_local = new Blob(blobs_recorded, { type: 'video/webm' });
             let formData = new FormData();
@@ -374,12 +386,14 @@
 
         end_interview.addEventListener('click', function () {
             clicked_end_button = true;
-            media_recorder.stop();
+            await media_recorder.stop();
+            setTimeout(() => { console.log("stop completely") }, 2000);
         });
 
         end_interview_second.addEventListener('click', function () {
             clicked_end_button = true;
-            media_recorder.stop();
+            await media_recorder.stop();
+            setTimeout(() => { console.log("stop completely") }, 2000);
         });
 
         window.addEventListener('load', async (event) => {

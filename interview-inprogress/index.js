@@ -16,7 +16,7 @@ module.exports = async function (context, req) {
     let interviewDetails = await InterviewService.GetInterviewDetails(interviewId);
 
     // check and update status to started
-    if (interviewDetails && interviewDetails?.status == 'nstarted') {
+    if (interviewDetails && interviewDetails?.status == 'Not Yet Started') {
         interviewDetails = await InterviewService.UpdateInterviewStatus(interviewId, 'started');
     }
 
