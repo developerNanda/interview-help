@@ -1,232 +1,236 @@
-       {
-            "id":1000,
-            "type": "React.Js",
-            "question": "What is React.js",
-            "answer":"React JS is a free and open-source front-end JavaScript library for building user interfaces based on UI components."
-        },
-        {
-            "id":1001,
-            "type": "React.Js",
-            "question": "List some of the major advantages and limitations of React ? ",
-            "answer":"Performance, Easy & Quick Testing, Easy to Learn & implement, Faster App Development, Code Reusability,Native App devp, Server-Side Rendering,Easy &Quick live App Updating. ,  " 
-        }
-        {
-            "id":1002,
-            "type": "React.Js",
-            "question": "What is react Component Life Cycle ? ",
-            "answer":"There are 4 phases Initializing, Mounting, Updating, Unmounting.
-            getInitialState(): This is executed before the creation of the component.
-            componentDidMount(): Is executed when the component gets rendered and placed on the DOM.
-            shouldComponentUpdate(): Is invoked when a component determines changes to the DOM and returns a “true” or “false” value based on certain conditions.
-            componentDidUpdate(): Is invoked immediately after rendering takes place.
-            componentWillUnmount(): Is invoked immediately before a component is destroyed and unmounted permanently.
-            So far, if you have any doubts about the above React interview questions and answers, please ask your questions in the section below."
-        },
-        {
-            "id":1003,
-            "type": "React.Js",
-            "question": "Give Us Some Features Of React",
-            "answer":"JSX, Virtul Dom, one way binding, Code reusablity"
-        },
-        {
-            "id":1004,
-            "type": "React.Js",
-            "question": "What is Use_State & Use_Effect Hooks in react Js",
-            "answer":"It is a Hook that allows you to have state variables in the funconal componenets and Use_effect is allows you to perform side effect in your component Example: Fetching Data "
-        },
-        {
-            "id":1005,
-            "type": "React.Js",
-            "question": "What are State and props in React",
-            "answer":"Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components."
-        }
-        {
-            "id":1006,
-            "type": "React.Js",
-            "question": "What is HOC  in React JS ",
-            "answer":"A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React's compositional nature. Concretely, a higher-order component is a function that takes a component and returns a new component."
-        },
-        {
-            "id":1007,
-            "type": "React.Js",
-            "question": "What is Virtual DOM ? ",
-            "answer":"React uses Virtual DOM exists which is like a lightweight copy of the actual DOM. So for every object that exists in the original DOM, there is an object for that in React Virtual DOM"
-        },
-         {
-            "id":1008,
-            "type": "React.Js",
-            "question": "What is Pure components in React JS ",
-            "answer":"A React component is considered pure if it renders the same output for the same state and props. For this type of class component, React provides the PureComponent base class. Class components that extend the React. PureComponent class are treated as pure components."
-        }
-        {
-            "id":1009,
-            "type": "React.Js",
-            "question": "What is React Routing  ",
-            "answer":"React router enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. It has a simple API with powerful features like lazy loading, dynamic route matching, and location transition handling."
-        },
-        {
-            "id":1010,
-            "type": "React.Js",
-            "question": "What is JSX ",
-            "answer":"JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React, Along  with HTML like Template syntax."
-        },
-        {
-            "id":1011,
-            "type": "React.Js",
-            "question": "What is purpose of render() in React",
-            "answer":"React renders HTML to the web page by using a function called render(). The purpose of the function is to display the specified HTML code inside the specified HTML element. In the render() method, we can read props and state and return our JSX code to the root component of our app"
-        }
-        {
-            "id":1012,
-            "type": "React.Js",
-            "question": "What is differnece between states and props in react ",
-            "answer":"States is internal and control by component itself, while Props are Externial and controlled by what ever renders by component"
-        },
-        {
-            "id":1013,
-            "type": "React.Js",
-            "question": "What is Event in React ?",
-            "answer":"Events are Triggered Reactions To Specific actions like Mouse hover and mouse click, key press etc these are similar to handling the dom elements. Each event contain own properties and behavior which is access by event handler only."
-        },
-        {
-            "id":1014,
-            "type": "React.Js",
-            "question": "What is components in React",
-            "answer":"Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components"
-        }
-        {
-            "id":1015,
-            "type": "React.Js",
-            "question": "What is Functional Components in React Js ",
-            "answer":"A React functional component is a simple JavaScript function that accepts props and returns a React element. It also referred as stateless components as it simply accept data and display them in some form.
-
-After the introduction of React Hooks, writing functional components has become the ​standard way of writing React components in modern applications."
-        },
-        {
-            "id":1016,
-            "type": "React.Js",
-            "question": "What are class components in react",
-            "answer":"The class component, a stateful/container component, is a regular ES6 class that extends the component class of the React library. It is called a stateful component because it controls how the state changes and the implementation of the component logic. Aside from that, they have access to all the different phases of a React lifecycle method."
-        },
-       {
-            "id":1017,
-            "type": "React.Js",
-            "question": "Explain the Lists in React",
-            "answer":"Using JSX we can show lists using JavaScript's built-in Array.map() method. The .map() method is often used to take one piece of data and convert it to another.
-
-Keys are unique identifiers that must be attached to the top-level element inside a map. Keys are used by React to know how to update a list whether adding, updating, or deleting items. This is part of how React is so fast with large lists."
-        }
-        {
-            "id":1018,
-            "type": "React.Js",
-            "question": How to make a API calls in React"",
-            "answer":"Consuming REST APIs in a React Application can be done in various ways. Some popular are Axios, fetch etc."
-
-        },
-        {
-            "id":1019,
-            "type": "React.Js",
-            "question": "What are the React Hooks",
-            "answer":"React Hooks are in-built functions that allow to use state and lifecycle methods inside functional components, they also work together with existing code, so they can easily be adopted into a codebase.
-
-Rules of Hooks:
-
-    Hooks should not be called inside loops, conditions, or nested functions.
-    Hooks should be used inside React function components
-
-Built-in Hooks:
-Hooks 	Description
-useState() - To manage states. Returns a stateful value and an updater function to update it.
-useEffect() -	To manage side-effects like API calls, subscriptions, timers, mutations, and more.
-useContext() 	To return the current value for a context.
-useReducer() 	A useState alternative to help with complex state management.
-useCallback() 	It returns a memorized version of a callback to help a child component not re-render unnecessarily.
-useMemo() 	It returns a memoized value that helps in performance optimizations.
-useRef() 	It returns a ref object with a .current property. The ref object is mutable. It is mainly used to access a child component imperatively.
-useImperativeHandle() 	It customizes the instance value that is exposed to parent components when using ref.
-useLayoutEffect() 	It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously.
-useDebugValue() 	Helps to display a label in React DevTools for custom hooks."
-        },
-       {
-            "id":1020,
-            "type": "React.Js",
-            "question": "What are advantages of using React Hooks",
-            "answer":"
-    * Hooks are easier to work with and to test (as separated functions from React components*) and make the code look cleaner, easier to read — a related logic can be tightly coupled in a custom hook.
-    * Hooks allow to do by breaking the logic between components into small functions and using them inside the components.
-    * Improved code reuse
-    * Better code composition
-    * Better defaults
-    * Sharing non-visual logic with the use of custom hooks
-    * Flexibility in moving up and down the components tree."
-
-        }
-        {
-            "id":1021,
-            "type": "React.Js",
-            "question": "What do you understand by refs in React",
-            "answer":""
-        },
-        {
-            "id":1022,
-            "type": "React.Js",
-            "question": "What do you understand by refs in React",
-            "answer":"The Refs provide a way to access DOM nodes or React elements created in the render method. React Refs are a useful feature that act as a means to reference a DOM element or a class component from within a parent component.
-
-Refs also provide some flexibility for referencing elements within a child component from a parent component, in the form of ref forwarding."
-        },
-       {
-            "id":1023,
-            "type": "React.Js",
-            "question": "What are the comments in react ",
-            "answer":"There are two types of comments in react Js 
-            Single Line : It indicates '//'
-            Multi Line : It indicates '/*      */' ."
-        }
-        {
-            "id":1024,
-            "type": "React.Js",
-            "question": "what is redux",
-            "answer":"Redux is an open-source, JavaScript library used to manage the application state. React uses Redux to build the user interface. It is a predictable state container for JavaScript applications and is used for the entire application’s state management."
-        },
-        {
-            "id":1025,
-            "type": "React.Js",
-            "question": "What are Components in Redux",
-            "answer":"Store: Holds the state of the application.
-                     Action: The source information for the store.
-                     Reducer: Specifies how the application's state changes in response to actions sent to the store."
-        },
-        {
-            "id":1026,
-            "type": "React.Js",
-            "question": "What is the Flux",
-            "answer":"Flux is the application architecture that Facebook uses for building web applications. It is a method of handling complex data inside a client-side application and manages how data flows in a React application.
-                      There is a single source of data (the store) and triggering certain actions is the only way way to update them.The actions call the dispatcher, and then the store is triggered and updated with their own data accordingly.
-                      When a dispatch has been triggered, and the store updates, it will emit a change event that the views can rerender accordingly.
-                      action"
-        },
-       {
-            "id":1027,
-            "type": "React.Js",
-            "question": "How do you implement react routing  ",
-            "answer":"We can implement routing in our React application using this method:
-                      Considering we have the components App, About, and Contact in our application "
-            Example:         
-                     const routing = {
-                      <Router>
-                      <div>
-                      <h1>React Router Example<h1>
-                      <Route path="/"components={App}/>
-                      <Route path="/about"components={About}/>
-                      <Route path="/Contact"components={Contact}/>
-                      </div>
-                      </Router>
-                      }
-
-        },
-        
-        Hope you have no doubts about this ReactJS interview questions article, in case of any difficulty, please leave your problems in the section below.
-       
-       
-       
+[
+    {
+        "question": "What is React.js",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": "React JS is a free and open-source front-end JavaScript library for building user interfaces based on UI components."
+    },
+    {
+        "question": "What is react Component Life Cycle ?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What are hooks and can you explain about useState(), useEffect(), etc in react Js",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What are State and props in React",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What is HOC in React JS and why we use them?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What is Virtual DOM ?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What is Pure components in React JS?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What is React Routing?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "Explain about JSX in react",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What is the key difference in between class based and functional based compoentns?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need State management for front end?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need State management for front end?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need State management for front end?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need State management for front end?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "How to transfer data from parent component to child component?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "How can we transfer data from child component to parent component",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "How will you make api calls in react and what is the lifecycle hook you prefer to use for making api calls?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need keys when we use list?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "Explain about prop drilling and how can we prevent it?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "How to prevent unnecessary re renderings of a functional component?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What is the use of useMemo() hooks in react?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What is Lifting State Up in React?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "What are the key advantages for serverside rendering of react components",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "How to reroute from one page to the other page in react?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "How to write unit test cases for react component and explain one test case?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": ""
+    },
+]
