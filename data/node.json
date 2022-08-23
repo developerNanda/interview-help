@@ -15,7 +15,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node101"
     },
     {
         "question": "What is Event loop in Node.js? How does it work ?",
@@ -24,7 +24,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node102"
     },
     {
         "question": "Is Node js single threaded or multi threaded",
@@ -33,7 +33,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node103"
     },
     {
         "question": "How does Node.js utilize multi-processor platforms",
@@ -42,7 +42,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node104"
     },
     {
         "question": "Explain the terms body-parser, cookie-parser, jade, morgan, nodemon, pm2, cors in Express JS?",
@@ -51,7 +51,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node105"
     },
     {
         "question": "What is restful services means",
@@ -60,7 +60,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node106"
     },
     {
         "question": "What is the use of next() function in node js",
@@ -69,7 +69,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node107"
     },
     {
         "question": "What are middlewares and why do we use them?",
@@ -78,7 +78,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node108"
     },
     {
         "question": "Please explain about authentication and authorisation vis JWT tokens mechanism",
@@ -87,7 +87,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node109"
     },
     {
         "question": "Have you used sockets in node js, Please explain what is socket and why we use them?",
@@ -96,7 +96,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node110"
     },
     {
         "question": " What is the difference between process.nextTick() and setImmediate()?",
@@ -105,7 +105,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node111"
     },
     {
         "question": "What is the difference between query parmas and path params?",
@@ -114,7 +114,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node112"
     },
     {
         "question": "What is callback hell?",
@@ -123,7 +123,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node113"
     },
     {
         "question": "What is difference between put and patch?",
@@ -132,7 +132,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node114"
     },
     {
         "question": "Can you please explain some of the http status codes like 200, 204, 400, 401, 403, 404, 405, 500 etc",
@@ -141,7 +141,7 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node115"
     },
     {
         "question": "What is REPL",
@@ -150,6 +150,6 @@
         "difficulty": 1,
         "keywords": [],
         "suggestions": [],
-        "questionId": "node100"
+        "questionId": "node116"
     }
 ]
