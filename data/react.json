@@ -1,0 +1,227 @@
+[
+    {
+        "question": "What is React.js",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react100",
+        "answer": "React JS is a free and open-source front-end JavaScript library for building user interfaces based on UI components."
+    },
+    {
+        "question": "What is react Component Life Cycle ?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react101",
+        "answer": ""
+    },
+    {
+        "question": "What are hooks and can you explain about useState(), useEffect(), etc in react Js",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react102",
+        "answer": ""
+    },
+    {
+        "question": "What are State and props in React",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react103",
+        "answer": ""
+    },
+    {
+        "question": "What is HOC in React JS and why we use them?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react104",
+        "answer": ""
+    },
+    {
+        "question": "What is Virtual DOM ?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react105",
+        "answer": ""
+    },
+    {
+        "question": "What is Pure components in React JS?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react106",
+        "answer": ""
+    },
+    {
+        "question": "What is React Routing?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react107",
+        "answer": ""
+    },
+    {
+        "question": "Explain about JSX in react",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react108",
+        "answer": ""
+    },
+    {
+        "question": "What is the key difference in between class based and functional based compoentns?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react109",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need State management for front end?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react110",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need State management for front end?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react111",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need State management for front end?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react112",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need State management for front end?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react113",
+        "answer": ""
+    },
+    {
+        "question": "How to transfer data from parent component to child component?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react114",
+        "answer": ""
+    },
+    {
+        "question": "How can we transfer data from child component to parent component",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react115",
+        "answer": ""
+    },
+    {
+        "question": "How will you make api calls in react and what is the lifecycle hook you prefer to use for making api calls?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react116",
+        "answer": ""
+    },
+    {
+        "question": "Why do we need keys when we use list?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react117",
+        "answer": ""
+    },
+    {
+        "question": "Explain about prop drilling and how can we prevent it?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react118",
+        "answer": ""
+    },
+    {
+        "question": "How to prevent unnecessary re renderings of a functional component?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react119",
+        "answer": ""
+    },
+    {
+        "question": "What is the use of useMemo() hooks in react?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react120",
+        "answer": ""
+    },
+    {
+        "question": "What is Lifting State Up in React?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react121",
+        "answer": ""
+    },
+    {
+        "question": "What are the key advantages for serverside rendering of react components",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react122",
+        "answer": ""
+    },
+    {
+        "question": "How to reroute from one page to the other page in react?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react123",
+        "answer": ""
+    },
+    {
+        "question": "How to write unit test cases for react component and explain one test case?",
+        "primaryLang": "react",
+        "difficulty": 1,
+        "keywords": [],
+        "suggestions": [],
+        "questionId": "react124",
+        "answer": ""
+    }
+]

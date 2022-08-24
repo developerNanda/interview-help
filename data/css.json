@@ -1,0 +1,116 @@
+[
+    {
+        "question": "What are the different types of Selectors in CSS?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css100"
+    },
+    {
+        "question": "What is a CSS Preprocessor? What are Sass, Less, and Stylus? Why do people use them?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css101"
+    },
+    {
+        "question": "What are Pseudo elements and Pseudo classes? Please tell some of them",
+        "answer": "",
+        "difficulty": 2,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css102"
+    },
+    {
+        "question": "Explain CSS position property?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css103"
+    },
+    {
+        "question": "What is the grid system?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css104"
+    },
+    {
+        "question": "What are the different ways to hide the element using CSS?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css105"
+    },
+    {
+        "question": "What does Accessibility (a11y) mean?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css106"
+    },
+    {
+        "question": " What is the importance of CSS Sprites?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css107"
+    },
+    {
+        "question": "How will you fix browser-specific styling issues",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css108"
+    },{
+        "question": "How will you fix browser-specific styling issues",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": ["realtime"],
+        "primaryLang": "css",
+        "questionId": "css109"
+    },{
+        "question": "What is the Box model in CSS? Which CSS properties are a part of it?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css110"
+    },{
+        "question": "What are the differences between adaptive design and responsive design?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css111"
+    },{
+        "question": "What is opacity, float, z-index in CSS3?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css112"
+    },{
+        "question": "What is flexbox and name some properties",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css113"
+    },{
+        "question": "Explain what are mediaqueries in css and why we write them",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "css",
+        "questionId": "css114"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What are latest feautures in the HTML5",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "html",
+        "questionId": "html100"
+    },
+    {
+        "question": "Can you please explain about the HTMl5 Sematic tags and why do we need to use them",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "html",
+        "questionId": "html101"
+    },
+    {
+        "question": "What are block level and inline elements?",
+        "answer": "",
+        "difficulty": 1,
+        "keywords": [],
+        "primaryLang": "html",
+        "questionId": "html102"
+    }
+]

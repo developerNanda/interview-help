@@ -1,145 +1,171 @@
 [
-    {
-        "id": 1000,
-        "type": "js",
-        "question": "data types present in javascript?",
-        "answer": "String, Number, Boolean, Undefined, Null, Object ",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        // {"A":"here is option A"},{"B":"here is option B"},{"B":"here is option B"},
-        "options": [],
-        // textBook, realTime, systemDesign, security, performance
-        // program
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1001,
-        "type": "js",
-        "question": "Hoisting in javascript",
-        "answer": "Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1003,
-        "type": "js",
-        "question": "Difference between “ == “ and “ === “ operators.",
-        "answer": "Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1004,
-        "type": "js",
-        "question": "Difference between var and let keyword in javascript.",
-        "answer": "var has function scope and will be hoisted, let has some block scope and it will not be hoisted",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1005,
-        "type": "js",
-        "question": "",
-        "answer": "",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1006,
-        "type": "js",
-        "question": "",
-        "answer": "",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1007,
-        "type": "js",
-        "question": "",
-        "answer": "",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1008,
-        "type": "js",
-        "question": "",
-        "answer": "",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1009,
-        "type": "js",
-        "question": "",
-        "answer": "",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    },
-    {
-        "id": 1010,
-        "type": "js",
-        "question": "",
-        "answer": "",
-        "extra": "",
-        "difficulty": "",
-        "primaryLang": "",
-        "secondaryLang": "",
-        "keyWords": [],
-        "options": [],
-        "isMCQ": false,
-        "hasOneAnswer": false
-    }
-]
+        {
+            "question": "data types present in javascript?",
+            "answer":"String, Number, Boolean, Undefined, Null, Object ",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js100"
+        },
+        {
+            "question": "Explain Hoisting in javascript",
+            "answer":"String, Number, Boolean, Undefined, Null, Object ",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js101"
+        },
+        {
+            "question": "Difference between “ == “ and “ === “ operators.",
+            "answer":"String, Number, Boolean, Undefined, Null, Object ",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js102"
+        },
+        {
+            "question": "Difference between var and let keyword in javascript.",
+            "answer":"String, Number, Boolean, Undefined, Null, Object ",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js103"
+        },
+        {
+            "question": "What are arrow functions",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js104"
+        },
+        {
+            "question": "What is an Immediately Invoked Function in JavaScript?",
+            "answer":"String, Number, Boolean, Undefined, Null, Object ",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js105"
+        },
+        {
+            "question": "What do you mean by strict mode in javascript and characteristics of javascript strict-mode?",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js106"
+        },
+        {
+            "question": "Please explain about call(), apply(), bind()",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js107"
+        },
+        {
+            "question": "Explain Higher Order Functions in javascript.",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js108"
+        },
+        {
+            "question": "What is closures in JS and why we use them?",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js109"
+        },
+        {
+            "question": "Explain this keyword in js",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js110"
+        },
+        {
+            "question": "What is currying in js",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js111"
+        },
+        {
+            "question": "Explain what are callbacks? and why we use them",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js112"
+        },
+        {
+            "question": "Please explain about rest paramenter and spread operator?",
+            "answer":"",
+            "difficulty": 2,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js113"
+        },
+        {
+            "question": "What are promises in JS",
+            "answer":"",
+            "difficulty": 2,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js114"
+        },
+        {
+            "question": "Explain about prototypal and classical inheritance",
+            "answer":"",
+            "difficulty": 3,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js115"
+        },
+        {
+            "question": "Please explain about generators",
+            "answer":"",
+            "difficulty": 2,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js116"
+        },
+        {
+            "question": "Please explain about sync/await and why we use them?",
+            "answer":"",
+            "difficulty": 2,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js117"
+        },
+        {
+            "question": "What is temporial dead zone",
+            "answer":"3",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js118"
+        },
+        {
+            "question": "Have you used object destructuring and please explain where you used it",
+            "answer":"",
+            "difficulty": 2,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js119"
+        },
+        {
+            "question": "Can you pelase explain about Map and Set in js",
+            "answer":"",
+            "difficulty": 1,
+            "keywords": [],
+            "primaryLang": "js",
+            "questionId": "js120"
+        }
+       
+    ]
