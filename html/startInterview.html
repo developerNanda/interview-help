@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Demo - Record Photo From Webcam Using Javascript</title>
+    <title>Virtual Interview | Virtual Video Interview, Video Interview | Tech Interviews</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <style type="text/css">
         button {
             width: 150px;
@@ -48,72 +49,87 @@
 </head>
 
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal"> <img class="mb-2"
-                src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">Company name
-        </h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-            Interview For Frontend Developer | Approx 30 min
-        </nav>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8">
-                <div class="pricing-header px-3 py-1 mx-auto text-center">
-                    <h1 class="display-4">Are you ready for Interview</h1>
-                    <p class="lead">You are not supposed to stop the interview in the middle so please keep 30 to 45
-                        minutes of time</p>
-                </div>
-
-                <div class="alert alert-info mx-auto text-center" role="alert">
-                    Please check your microphone and camera before starting your interview
-                </div>
-                <div class="pricing-header my-1 px-3 py-1 pt-md-5 pb-md-4 mx-auto text-center">
-                    <h2 class="lead">Please keep your self in a pleseant environment with low noise and bright light
-                    </h2>
-                    <h2 class="lead">Please turn on your microphone and camera through out interview
-                    </h2>
-                    <h2 class="lead font-weight-light font-italic">Wishing you a very good luck for your interview
-                    </h2>
-                </div>
+    <div class="row" id="content-loading-main">
+        <div class="col-5"></div>
+        <div class="col-4">
+            <div class="spinner-border text-primary" style="width: 13rem; height: 13rem; margin-top: 10rem"
+                role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-            <div class="col-4">
-                <div class="card-deck text-center">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h2 class="lead">Test your Microphone and Camera</h2>
-                            <video id="video" width="320" height="240" autoplay></video>
-                            <!-- <video id="replay" width="320" height="240" controls></video> -->
-                            <button id="start-record" class="btn btn-lg btn-block btn-outline-primary">Start
-                                Recording</button>
-                            <button id="stop-record" class="btn btn-lg btn-block btn-outline-primary">Stop
-                                Recording</button>
-                            <a id="download-video" download="test.webm">Download Video</a>
-                            <button type="button" id="start-camera"
-                                class="btn btn-lg btn-block btn-outline-primary">Start
-                                Camera</button>
-                        </div>
+        </div>
+    </div>
+    <div id="content-main">
+        <div
+            class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <h5 class="my-0 mr-md-auto font-weight-normal"> <img class="mb-2"
+                    src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">Company name
+            </h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <span>Interview For <span id="job-position"></span> at <span id="company-name"></span> | Approx <span id="interview-time"></span> 
+                    min</span>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 mt-5">
+                    <div class="pricing-header px-3 py-1 mx-auto text-center">
+                        <h1 class="display-4">Are you ready for Interview</h1>
+                        <p class="lead">You are not supposed to stop the interview in the middle so please keep 30 to 45
+                            minutes of time</p>
+                    </div>
+
+                    <div class="alert alert-info mx-auto text-center" style="font-size: 1.35rem;" role="alert">
+                        Please check your microphone and camera before starting your interview
+                    </div>
+                    <div class="pricing-header my-1 px-3 py-1 pt-md-5 pb-md-4 mx-auto text-center">
+                        <h2 class="lead">Please keep your self in a pleseant environment with low noise and bright light
+                        </h2>
+                        <h2 class="lead">Please turn on your microphone and camera through out interview
+                        </h2>
+                        <h2 class="lead font-weight-light font-italic">Wishing you a very good luck for your interview
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="text-center shadow-lg p-2">
+                        <h2 class="lead mt-3 pt-2">Test your Microphone and Camera</h2>
+                        <video id="video" height="300" autoplay></video>
+                        <!-- <video id="replay" width="320" height="240" controls></video> -->
+                        <button id="start-record" class="btn btn-lg btn-block btn-outline-primary">Start
+                            Recording</button>
+                        <button id="stop-record" class="btn btn-lg btn-block btn-outline-primary">Stop
+                            Recording</button>
+                        <a id="download-video" download="test.webm">Download Video</a>
+                        <button type="button" id="start-camera" class="btn btn-lg btn-block btn-outline-primary">Start
+                            Camera</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <button type="button" id="start-interview" class="btn btn-lg btn-block btn-primary">Start
-                    Interview</button>
-            </div>
-        </div>
-
-
-        <footer class="pt-2 my-md-2 pt-md-2 border-top">
             <div class="row">
-                <div class="col-12 col-md">Supported by Ilavar tech</div>
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button type="button" id="start-interview" class="btn btn-lg btn-block btn-primary">Start
+                        Interview</button>
+                </div>
             </div>
-        </footer>
+
+
+            <footer class="pt-3 my-md-3 pt-md-3 border-top">
+                <div class="d-flex justify-content-center">
+                    Supported by
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                        class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z" />
+                    </svg>
+                    <a href="https://ilavar.com/"> Ilavar tech</a>
+                </div>
+            </footer>
+        </div>
     </div>
     <script>
         let pathParamsArray = window.location.pathname.split('/');
+        let interviewId = pathParamsArray[3];
 
         let camera_button = document.querySelector("#start-camera");
         let video = document.querySelector("#video");
@@ -122,11 +138,32 @@
         let download_link = document.querySelector("#download-video");
         let replay = document.querySelector("#replay");
         let start_interview = document.querySelector("#start-interview");
-        
+
 
         let camera_stream = null;
         let media_recorder = null;
         let blobs_recorded = [];
+
+        function updateHtmlData() {
+            $("#job-position").text(interviewDetails.jobRole);
+            $("#company-name").text(interviewDetails.companyName);
+            $("#interview-time").text(interviewDetails.interviewTime);
+        }
+
+        async function getInterviewQuestions() {
+            await $.ajax({
+                url: `/api/interview-details/${interviewId}/questions`,
+                type: "POST",
+                processData: false,
+                contentType: "application/json"
+            }).then(function (data) {
+                interviewDetails = JSON.parse(data);
+                console.log(data);
+                camera_button.click();
+            }, function (e) {
+                console.log(e);
+            });
+        }
 
         camera_button.addEventListener('click', async function () {
             try {
@@ -185,10 +222,20 @@
             start_button.style.display = 'block';
         });
 
-        start_interview.addEventListener('click', function(){
-            window.location.replace('/interview-inprogress/'+pathParamsArray[2]);
+        start_interview.addEventListener('click', function () {
+            window.location.replace('/api/interview-inprogress/' + interviewId + '/1');
         });
-        camera_button.click();
+        window.addEventListener('load', async function () {
+            $('#content-loading-sub').hide();
+            $('#content-main').hide();
+            console.log('All assets are loaded');
+            await getInterviewQuestions();
+            await updateHtmlData();
+            setTimeout(async function () {
+                $('#content-loading-main').hide();
+                $('#content-main').show();
+            }, 2000);
+        })
 
     </script>
 </body>

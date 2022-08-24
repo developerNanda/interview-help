@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Virtual Interview | Virtual Video Interview, Video Interview | Tech Interviews</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style type="text/css">
+        button {
+            width: 150px;
+            padding: 10px;
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #111111;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        #start-camera {
+            margin-top: 50px;
+        }
+
+        #video {
+            display: none;
+            margin: 50px auto 0 auto;
+        }
+
+        #start-record,
+        #stop-record,
+        #download-video {
+            display: none;
+        }
+
+        #download-video {
+            text-align: center;
+            margin: 20px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal"> <img class="mb-2"
+                src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">Company name
+        </h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            Interview For Frontend Developer | Approx 30 min
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="pricing-header px-3 py-1 mx-auto text-center">
+                    <h1 class="display-4">Unexpected Error Occurred</h1>
+                    <p class="lead">Please reach your recruiter as soon as possible</p>
+                </div>
+
+                <div class="alert alert-info mx-auto text-center shadow-lg p-4 mb-4" style="font-size: 1.25rem;" role="alert">
+                    Please feel free to reach out tech support team with the correct interview Links or forward email
+                    that
+                    you got from your recruiter to <span class="font-weight-bolder">
+                        facedTechnicalDifficuties@outlook.com</span0>
+                </div>
+                <div class="pricing-header my-1 px-3 py-1 pt-md-5 pb-md-4 mx-auto text-center">
+                    <h2 class="lead font-weight-light font-italic">Wishing you a very good luck for your career
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <footer class="pt-3 my-md-3 pt-md-3 border-top">
+            <div class="d-flex justify-content-center">
+                Supported by
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                    class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z" />
+                </svg>
+                <a href="https://ilavar.com/"> Ilavar tech</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let pathParamsArray = window.location.pathname.split('/');
+        let interviewId = pathParamsArray[3];
+
+        let camera_button = document.querySelector("#start-camera");
+        let video = document.querySelector("#video");
+        let start_button = document.querySelector("#start-record");
+        let stop_button = document.querySelector("#stop-record");
+        let download_link = document.querySelector("#download-video");
+        let replay = document.querySelector("#replay");
+        let start_interview = document.querySelector("#start-interview");
+
+
+        let camera_stream = null;
+        let media_recorder = null;
+        let blobs_recorded = [];
+
+        window.addEventListener('load', async function () {
+            console.log('All assets are loaded');
+        })
+
+    </script>
+</body>
+
+</html>
