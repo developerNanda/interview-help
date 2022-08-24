@@ -1,5 +1,4 @@
-{
-    "response" :[
+[
         {
             "question": "data types present in javascript?",
             "answer":"String, Number, Boolean, Undefined, Null, Object ",
@@ -170,4 +169,3 @@
         }
        
     ]
-}
