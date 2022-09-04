@@ -384,13 +384,13 @@
         //     media_recorder.stop();
         // });
 
-        end_interview.addEventListener('click', function () {
+        end_interview.addEventListener('click', async function () {
             clicked_end_button = true;
             await media_recorder.stop();
             // setTimeout(() => { console.log("stop completely") }, 2000);
         });
 
-        end_interview_second.addEventListener('click', function () {
+        end_interview_second.addEventListener('click', async function () {
             clicked_end_button = true;
             await media_recorder.stop();
             // setTimeout(() => { console.log("stop completely") }, 2000);
